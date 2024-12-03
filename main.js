@@ -83,3 +83,13 @@ scrollTopButton.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+function limpiarCampos() {
+    // Obtenemos los elementos de los campos por su ID
+    const alturaInput = document.getElementById('height');
+    const pesoInput = document.getElementById('weight');
+
+    // Limpiamos los valores de los campos
+    alturaInput.value = '';
+    pesoInput.value = '';
+}
