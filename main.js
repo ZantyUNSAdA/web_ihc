@@ -25,7 +25,7 @@ function calculate(){
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
   const forms = document.querySelectorAll('.needs-validation');
 
-  // Loop over them and prevent submission
+  // Bucle y prevencion del envio.
   Array.from(forms).forEach(form => {
     form.addEventListener('submit', event => {
       if (!form.checkValidity()) {
@@ -35,10 +35,10 @@ function calculate(){
 
       form.classList.add('was-validated');
 
-      // Custom validation for showing/hiding invalid feedback messages
+      // Validacion
       const invalidFeedbackElements = form.querySelectorAll('.invalid-feedback');
       let isValid = true;
-      for (let i = 0; i < form.elements.length - 1; i++) { // Exclude the submit button
+      for (let i = 0; i < form.elements.length - 1; i++) { // Excluye el boton de envio.
         const input = form.elements[i];
         if (input.checkValidity() === false) {
           isValid = false;

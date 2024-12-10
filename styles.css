@@ -1,4 +1,3 @@
-
 *{
     margin: 0;
     padding: 0;
@@ -21,7 +20,7 @@
     position: relative;
     overflow: hidden;
   }
-  
+  /*Estilo textos*/
   .textos-hero{
     height: 500px;
     color: black;
@@ -411,6 +410,8 @@
     .card{
       height: 380px;
     }
+
+    /* Boton de scrollTop*/
 
     #scrollTopButton {
       bottom: 10px;
