@@ -48,6 +48,12 @@
     color:white;
     font-weight: bold;
   }
+
+  #titulo-blog{
+    color:white;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+   }
   
   .svg-hero{
     position:absolute;

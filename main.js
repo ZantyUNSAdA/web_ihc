@@ -7,13 +7,13 @@ function calculate(){
     var imc = weight / height ** 2;
     var resultado=""
     if(imc<18.5){
-        resultado="Usted se encuentra por debajo del peso normal.";
+        resultado="Usted se encuentra por debajo del peso recomendado.";
     }else if(imc<24.9){
-        resultado="Usted se encuentra en un peso normal!";
+        resultado="Usted se encuentra en un peso saludable!";
     }else if(imc<39.9){
-        resultado="Usted se encuentra por encima del peso normal.";
+        resultado="Usted se encuentra por encima del peso recomendado.";
     }else if(imc>39.9){
-        resultado="Usted se encuentra con obesidad.";
+        resultado="Usted se encuentra muy por encima del peso recomendado.";
     }
     document.getElementById("text_area").innerText=resultado;
 }
